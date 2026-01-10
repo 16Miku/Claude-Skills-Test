@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d0221;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+/* 顶部彩色条 */
+.top-bar { position: absolute; top: 0; left: 0; width: 240pt; height: 4pt; background: #ff6b6b; }
+.top-bar2 { position: absolute; top: 0; left: 240pt; width: 240pt; height: 4pt; background: #4ecdc4; }
+.top-bar3 { position: absolute; top: 0; left: 480pt; width: 240pt; height: 4pt; background: #a855f7; }
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 30pt; left: 50pt;
+}
+.section-num {
+  color: rgba(78, 205, 196, 0.4);
+  font-size: 10pt;
+  margin: 0 0 5pt 0;
+  letter-spacing: 2pt;
+}
+h1 {
+  color: #4ecdc4;
+  font-size: 32pt;
+  font-weight: 600;
+  margin: 0;
+}
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11pt;
+  margin: 5pt 0 0 0;
+}
+/* 时间线容器 */
+.timeline {
+  position: absolute;
+  top: 110pt; left: 50pt; right: 50pt;
+}
+/* 时间线横条 */
+.timeline-bar {
+  position: absolute;
+  top: 25pt; left: 0;
+  width: 620pt; height: 3pt;
+  background: #4ecdc4;
+}
+/* 时间点 */
+.timeline-items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.timeline-item {
+  width: 115pt;
+  text-align: center;
+}
+.year-circle {
+  width: 50pt; height: 50pt;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12pt auto;
+  position: relative;
+  z-index: 1;
+}
+.item1 .year-circle { background: #a855f7; }
+.item2 .year-circle { background: #8b5cf6; }
+.item3 .year-circle { background: #6366f1; }
+.item4 .year-circle { background: #3b82f6; }
+.item5 .year-circle { background: #4ecdc4; }
+.year-text {
+  color: #ffffff;
+  font-size: 14pt;
+  font-weight: 700;
+  margin: 0;
+}
+.item-title {
+  font-size: 11pt;
+  font-weight: 600;
+  margin: 0 0 5pt 0;
+}
+.item1 .item-title { color: #a855f7; }
+.item2 .item-title { color: #8b5cf6; }
+.item3 .item-title { color: #6366f1; }
+.item4 .item-title { color: #3b82f6; }
+.item5 .item-title { color: #4ecdc4; }
+.item-desc {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 9pt;
+  margin: 0;
+  line-height: 1.4;
+}
+/* 终章卡片 */
+.finale-card {
+  position: absolute;
+  bottom: 45pt; left: 50pt;
+  width: 580pt;
+  background: rgba(255, 107, 107, 0.1);
+  border-radius: 8pt;
+  padding: 15pt 20pt;
+  border-left: 3pt solid #ff6b6b;
+  display: flex;
+  align-items: center;
+  gap: 20pt;
+}
+.finale-year {
+  color: #ff6b6b;
+  font-size: 28pt;
+  font-weight: 700;
+  margin: 0;
+}
+.finale-content {
+  flex: 1;
+}
+.finale-title {
+  color: #ff6b6b;
+  font-size: 14pt;
+  font-weight: 600;
+  margin: 0 0 5pt 0;
+}
+.finale-desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10pt;
+  margin: 0;
+}
+/* 页码 */
+.page-num {
+  position: absolute;
+  bottom: 22pt; right: 50pt;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="top-bar2"></div>
+<div class="top-bar3"></div>
+<div class="header">
+  <p class="section-num">05 / TIMELINE</p>
+  <h1>系列年表</h1>
+  <p class="subtitle">从TV动画到新剧场版</p>
+</div>
+<div class="timeline">
+  <div class="timeline-bar"></div>
+  <div class="timeline-items">
+    <div class="timeline-item item1">
+      <div class="year-circle"><p class="year-text">1995</p></div>
+      <p class="item-title">TV动画</p>
+      <p class="item-desc">原作26集TV版播出</p>
+    </div>
+    <div class="timeline-item item2">
+      <div class="year-circle"><p class="year-text">1997</p></div>
+      <p class="item-title">旧剧场版</p>
+      <p class="item-desc">Air/真心为你 完结篇</p>
+    </div>
+    <div class="timeline-item item3">
+      <div class="year-circle"><p class="year-text">2007</p></div>
+      <p class="item-title">新剧场版:序</p>
+      <p class="item-desc">重制版第一部</p>
+    </div>
+    <div class="timeline-item item4">
+      <div class="year-circle"><p class="year-text">2009</p></div>
+      <p class="item-title">新剧场版:破</p>
+      <p class="item-desc">重制版第二部</p>
+    </div>
+    <div class="timeline-item item5">
+      <div class="year-circle"><p class="year-text">2012</p></div>
+      <p class="item-title">新剧场版:Q</p>
+      <p class="item-desc">重制版第三部</p>
+    </div>
+  </div>
+</div>
+<div class="finale-card">
+  <p class="finale-year">2021</p>
+  <div class="finale-content">
+    <p class="finale-title">新剧场版:终</p>
+    <p class="finale-desc">新剧场版系列的史诗终章，为26年的EVA传奇画上句号。</p>
+  </div>
+</div>
+<p class="page-num">06 / 08</p>
+</body>
+</html>

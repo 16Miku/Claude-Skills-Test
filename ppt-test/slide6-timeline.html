@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d1b2a; font-family: Arial, sans-serif;
+  display: flex;
+}
+/* 顶部装饰线 */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720pt;
+  height: 4pt;
+  background: #4ecdc4;
+}
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 28pt;
+  left: 50pt;
+}
+h1 {
+  color: #4ecdc4;
+  font-size: 28pt;
+  margin: 0;
+}
+.subtitle {
+  color: #777777;
+  font-size: 11pt;
+  margin: 6pt 0 0 0;
+}
+/* 时间线容器 */
+.timeline {
+  position: absolute;
+  top: 100pt;
+  left: 50pt;
+  right: 50pt;
+}
+/* 时间线卡片行 */
+.timeline-row {
+  display: flex;
+  gap: 12pt;
+}
+.year-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 5pt;
+  overflow: hidden;
+}
+.year-header {
+  background: #5c3d99;
+  padding: 10pt;
+}
+.year-text {
+  color: #ffffff;
+  font-size: 16pt;
+  margin: 0;
+  text-align: center;
+}
+.year-body {
+  padding: 12pt;
+}
+.release-title {
+  color: #4ecdc4;
+  font-size: 11pt;
+  margin: 0 0 6pt 0;
+}
+.release-desc {
+  color: #999999;
+  font-size: 9pt;
+  margin: 0;
+  line-height: 1.4;
+}
+/* 2021终章 - 连接时间线 */
+.final-section {
+  position: absolute;
+  top: 250pt;
+  left: 50pt;
+  right: 50pt;
+}
+.connector-line {
+  width: 2pt;
+  height: 30pt;
+  background: #5c3d99;
+  margin: 0 auto 15pt auto;
+}
+.final-card {
+  background: rgba(255, 107, 107, 0.12);
+  border-radius: 6pt;
+  padding: 18pt 22pt;
+  border-left: 4pt solid #ff6b6b;
+}
+.final-year {
+  color: #ff6b6b;
+  font-size: 18pt;
+  margin: 0 0 8pt 0;
+}
+.final-desc {
+  color: #cccccc;
+  font-size: 12pt;
+  margin: 0;
+  line-height: 1.5;
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="header">
+  <h1>系列年表</h1>
+  <p class="subtitle">从TV动画到新剧场版</p>
+</div>
+<div class="timeline">
+  <div class="timeline-row">
+    <div class="year-card">
+      <div class="year-header">
+        <p class="year-text">1995</p>
+      </div>
+      <div class="year-body">
+        <p class="release-title">TV动画</p>
+        <p class="release-desc">原作26集TV版播出</p>
+      </div>
+    </div>
+    <div class="year-card">
+      <div class="year-header">
+        <p class="year-text">1997</p>
+      </div>
+      <div class="year-body">
+        <p class="release-title">旧剧场版</p>
+        <p class="release-desc">Air/真心为你 完结篇</p>
+      </div>
+    </div>
+    <div class="year-card">
+      <div class="year-header">
+        <p class="year-text">2007</p>
+      </div>
+      <div class="year-body">
+        <p class="release-title">新剧场版:序</p>
+        <p class="release-desc">重制版第一部</p>
+      </div>
+    </div>
+    <div class="year-card">
+      <div class="year-header">
+        <p class="year-text">2009</p>
+      </div>
+      <div class="year-body">
+        <p class="release-title">新剧场版:破</p>
+        <p class="release-desc">重制版第二部</p>
+      </div>
+    </div>
+    <div class="year-card">
+      <div class="year-header">
+        <p class="year-text">2012</p>
+      </div>
+      <div class="year-body">
+        <p class="release-title">新剧场版:Q</p>
+        <p class="release-desc">重制版第三部</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="final-section">
+  <div class="connector-line"></div>
+  <div class="final-card">
+    <p class="final-year">2021 终章</p>
+    <p class="final-desc">新剧场版:终 - 新剧场版系列的史诗终章，为26年的EVA传奇画上句号。</p>
+  </div>
+</div>
+</body>
+</html>

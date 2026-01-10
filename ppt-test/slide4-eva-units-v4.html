@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d0221;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+/* 顶部彩色条 */
+.top-bar { position: absolute; top: 0; left: 0; width: 240pt; height: 4pt; background: #ff6b6b; }
+.top-bar2 { position: absolute; top: 0; left: 240pt; width: 240pt; height: 4pt; background: #4ecdc4; }
+.top-bar3 { position: absolute; top: 0; left: 480pt; width: 240pt; height: 4pt; background: #a855f7; }
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 30pt; left: 50pt;
+}
+.section-num {
+  color: rgba(78, 205, 196, 0.4);
+  font-size: 10pt;
+  margin: 0 0 5pt 0;
+  letter-spacing: 2pt;
+}
+h1 {
+  color: #ffffff;
+  font-size: 32pt;
+  font-weight: 700;
+  margin: 0;
+}
+h1 span { color: #4ecdc4; }
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11pt;
+  margin: 5pt 0 0 0;
+}
+/* EVA 机体卡片 */
+.eva-grid {
+  position: absolute;
+  top: 110pt; left: 50pt;
+  display: flex;
+  gap: 15pt;
+}
+.eva-card {
+  width: 195pt;
+  background: rgba(26, 10, 46, 0.6);
+  border-radius: 8pt;
+  overflow: hidden;
+}
+/* 卡片头部 */
+.card-header {
+  padding: 15pt;
+}
+.unit01 .card-header { background: #8b5cf6; }
+.unit00 .card-header { background: #3b82f6; }
+.unit02 .card-header { background: #ef4444; }
+.eva-name {
+  color: #ffffff;
+  font-size: 18pt;
+  font-weight: 700;
+  margin: 0;
+}
+.eva-type {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10pt;
+  margin: 5pt 0 0 0;
+}
+/* 卡片内容 */
+.card-body {
+  padding: 15pt;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10pt;
+}
+.info-label {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10pt;
+  margin: 0;
+}
+.info-value {
+  font-size: 10pt;
+  margin: 0;
+  text-align: right;
+}
+.unit01 .info-value { color: #a78bfa; }
+.unit00 .info-value { color: #60a5fa; }
+.unit02 .info-value { color: #f87171; }
+.eva-desc {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 9pt;
+  line-height: 1.5;
+  margin: 12pt 0 0 0;
+  padding-top: 12pt;
+}
+.desc-divider {
+  width: 100%;
+  height: 1pt;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+/* 底部状态栏 */
+.status-dot {
+  position: absolute;
+  bottom: 32pt; left: 50pt;
+  width: 8pt; height: 8pt;
+  background: #22c55e;
+  border-radius: 50%;
+}
+.status-text {
+  position: absolute;
+  bottom: 30pt; left: 65pt;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10pt;
+  margin: 0;
+}
+.page-num {
+  position: absolute;
+  bottom: 28pt; right: 50pt;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="top-bar2"></div>
+<div class="top-bar3"></div>
+<div class="header">
+  <p class="section-num">03 / EVA UNITS</p>
+  <h1><span>EVA</span> 机体</h1>
+  <p class="subtitle">泛用人型决战兵器 - 人造人</p>
+</div>
+<div class="eva-grid">
+  <div class="eva-card unit01">
+    <div class="card-header">
+      <p class="eva-name">初号机</p>
+      <p class="eva-type">TEST TYPE</p>
+    </div>
+    <div class="card-body">
+      <div class="info-row">
+        <p class="info-label">驾驶员</p>
+        <p class="info-value">碇真嗣</p>
+      </div>
+      <div class="info-row">
+        <p class="info-label">配色</p>
+        <p class="info-value">紫色 / 绿色</p>
+      </div>
+      <div class="info-row">
+        <p class="info-label">灵魂</p>
+        <p class="info-value">碇唯</p>
+      </div>
+      <div class="desc-divider"></div>
+      <p class="eva-desc">标志性的紫色机体，可进入暴走状态。内含真嗣母亲的灵魂。</p>
+    </div>
+  </div>
+  <div class="eva-card unit00">
+    <div class="card-header">
+      <p class="eva-name">零号机</p>
+      <p class="eva-type">PROTOTYPE</p>
+    </div>
+    <div class="card-body">
+      <div class="info-row">
+        <p class="info-label">驾驶员</p>
+        <p class="info-value">绫波丽</p>
+      </div>
+      <div class="info-row">
+        <p class="info-label">配色</p>
+        <p class="info-value">橙色 / 蓝色</p>
+      </div>
+      <div class="info-row">
+        <p class="info-label">状态</p>
+        <p class="info-value">已损毁</p>
+      </div>
+      <div class="desc-divider"></div>
+      <p class="eva-desc">第一台成功的EVA，性能不稳定但由丽忠实驾驶。</p>
+    </div>
+  </div>
+  <div class="eva-card unit02">
+    <div class="card-header">
+      <p class="eva-name">二号机</p>
+      <p class="eva-type">PRODUCTION MODEL</p>
+    </div>
+    <div class="card-body">
+      <div class="info-row">
+        <p class="info-label">驾驶员</p>
+        <p class="info-value">明日香</p>
+      </div>
+      <div class="info-row">
+        <p class="info-label">配色</p>
+        <p class="info-value">红色</p>
+      </div>
+      <div class="info-row">
+        <p class="info-label">灵魂</p>
+        <p class="info-value">惣流京子</p>
+      </div>
+      <div class="desc-divider"></div>
+      <p class="eva-desc">首台量产型EVA，四眼设计，战斗风格激进。</p>
+    </div>
+  </div>
+</div>
+<div class="status-dot"></div>
+<p class="status-text">MAGI SYSTEM ONLINE</p>
+<p class="page-num">04 / 08</p>
+</body>
+</html>

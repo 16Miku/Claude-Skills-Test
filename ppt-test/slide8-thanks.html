@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1a0a2e; font-family: Arial, sans-serif;
+  display: flex;
+  position: relative;
+}
+/* 背景装饰 */
+.bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360pt;
+  height: 405pt;
+  background: #2d1b4e;
+}
+.bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 360pt;
+  height: 405pt;
+  background: #1a0a2e;
+}
+/* 左侧装饰线 */
+.left-accent {
+  position: absolute;
+  left: 0;
+  top: 100pt;
+  width: 5pt;
+  height: 205pt;
+  background: #4ecdc4;
+}
+/* 主内容区 */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720pt;
+  height: 405pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 感谢标题 */
+.thanks-box {
+  background: #ff6b6b;
+  padding: 28pt 90pt;
+  margin-bottom: 28pt;
+  border-radius: 6pt;
+}
+h1 {
+  color: #ffffff;
+  font-size: 48pt;
+  margin: 0;
+  text-align: center;
+}
+/* 副标题 */
+.subtitle-box {
+  background: #4ecdc4;
+  padding: 14pt 45pt;
+  border-radius: 4pt;
+  margin-bottom: 35pt;
+}
+.subtitle {
+  color: #1a0a2e;
+  font-size: 16pt;
+  margin: 0;
+  text-align: center;
+}
+/* 引用 */
+.quote-container {
+  max-width: 450pt;
+  text-align: center;
+  margin-bottom: 30pt;
+}
+.quote-text {
+  color: #e0e0e0;
+  font-size: 15pt;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+.quote-source {
+  color: #ff6b6b;
+  font-size: 12pt;
+  margin: 12pt 0 0 0;
+}
+/* 底部标语 */
+.nerv-motto {
+  position: absolute;
+  bottom: 35pt;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10pt 30pt;
+  border-radius: 25pt;
+  border: 1pt solid rgba(255, 255, 255, 0.15);
+}
+.motto-text {
+  color: #cccccc;
+  font-size: 11pt;
+  margin: 0;
+  letter-spacing: 1pt;
+}
+</style>
+</head>
+<body>
+<div class="bg-left"></div>
+<div class="bg-right"></div>
+<div class="left-accent"></div>
+<div class="content">
+  <div class="thanks-box">
+    <h1>感谢观看</h1>
+  </div>
+  <div class="subtitle-box">
+    <p class="subtitle">EVA 新世纪福音战士 介绍</p>
+  </div>
+  <div class="quote-container">
+    <p class="quote-text">"毁灭的命运，也是新生的喜悦。"</p>
+    <p class="quote-source">新世纪福音战士</p>
+  </div>
+</div>
+<div class="nerv-motto">
+  <p class="motto-text">神在天上，世界一切安好</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d1b2a; font-family: Arial, sans-serif;
+  display: flex;
+}
+/* 左侧装饰条 */
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6pt;
+  height: 405pt;
+  background: #ff6b6b;
+}
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 30pt;
+  left: 50pt;
+}
+.header-line {
+  width: 70pt;
+  height: 3pt;
+  background: #4ecdc4;
+  margin-bottom: 10pt;
+}
+h1 {
+  color: #4ecdc4;
+  font-size: 32pt;
+  margin: 0;
+}
+/* 主要介绍框 */
+.intro-box {
+  position: absolute;
+  top: 100pt;
+  left: 50pt;
+  right: 50pt;
+  background: rgba(78, 205, 196, 0.12);
+  padding: 22pt 25pt;
+  border-radius: 8pt;
+  border-left: 4pt solid #4ecdc4;
+}
+.intro-text {
+  color: #e0e0e0;
+  font-size: 15pt;
+  margin: 0;
+  line-height: 1.7;
+}
+/* 三个信息卡片 */
+.info-grid {
+  position: absolute;
+  top: 220pt;
+  left: 50pt;
+  right: 50pt;
+  display: flex;
+  gap: 20pt;
+}
+.info-card {
+  flex: 1;
+  background: rgba(255, 107, 107, 0.15);
+  padding: 18pt;
+  border-radius: 6pt;
+  border-top: 3pt solid #ff6b6b;
+}
+.card-title {
+  color: #ff6b6b;
+  font-size: 14pt;
+  margin: 0 0 10pt 0;
+}
+.card-content {
+  color: #cccccc;
+  font-size: 12pt;
+  margin: 0;
+  line-height: 1.5;
+}
+/* 底部装饰 */
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250pt;
+  height: 45pt;
+  background: #1b263b;
+}
+.nerv-badge {
+  position: absolute;
+  bottom: 12pt;
+  right: 50pt;
+  background: #ff6b6b;
+  padding: 6pt 15pt;
+  border-radius: 3pt;
+}
+.nerv-text {
+  color: #ffffff;
+  font-size: 11pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="sidebar"></div>
+<div class="header">
+  <div class="header-line"></div>
+  <h1>故事概述</h1>
+</div>
+<div class="intro-box">
+  <p class="intro-text">2015年，距离被称为"第二次冲击"的全球性灾难已过去15年。少年碇真嗣被父亲碇源堂召唤至第三新东京市，他必须驾驶名为EVA的巨型生体兵器，与威胁人类存亡的神秘生命体"使徒"战斗。</p>
+</div>
+<div class="info-grid">
+  <div class="info-card">
+    <p class="card-title">故事背景</p>
+    <p class="card-content">第三新东京市，为抵御使徒而建造的要塞都市</p>
+  </div>
+  <div class="info-card">
+    <p class="card-title">核心组织</p>
+    <p class="card-content">NERV，负责运营EVA的特务机关</p>
+  </div>
+  <div class="info-card">
+    <p class="card-title">主要威胁</p>
+    <p class="card-content">使徒，企图引发第三次冲击的神秘存在</p>
+  </div>
+</div>
+<div class="bottom-bar"></div>
+<div class="nerv-badge">
+  <p class="nerv-text">NERV HQ</p>
+</div>
+</body>
+</html>

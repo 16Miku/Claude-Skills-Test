@@ -1,0 +1,49 @@
+# Node.js 依赖
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 包管理器锁文件 (可选保留)
+# package-lock.json
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE 和编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Playwright 浏览器缓存
+.playwright/
+
+# 构建输出 (如果需要保留生成的 pptx 可以注释掉)
+# *.pptx
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 测试覆盖率
+coverage/
+.nyc_output/

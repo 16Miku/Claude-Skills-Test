@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1a0a2e; font-family: Arial, sans-serif;
+  display: flex;
+}
+/* 右侧装饰条 */
+.sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5pt;
+  height: 405pt;
+  background: #ff6b6b;
+}
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 25pt;
+  left: 50pt;
+}
+.header-line {
+  width: 60pt;
+  height: 3pt;
+  background: #ff6b6b;
+  margin-bottom: 8pt;
+}
+h1 {
+  color: #ff6b6b;
+  font-size: 26pt;
+  margin: 0;
+}
+/* 主题卡片网格 - 2x2布局 */
+.themes-grid {
+  position: absolute;
+  top: 80pt;
+  left: 50pt;
+  right: 55pt;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12pt;
+}
+.theme-card {
+  width: 298pt;
+  background: rgba(78, 205, 196, 0.08);
+  padding: 12pt 15pt;
+  border-radius: 5pt;
+  border-left: 4pt solid #4ecdc4;
+}
+.theme-card.alt {
+  border-left-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.08);
+}
+.theme-title {
+  color: #4ecdc4;
+  font-size: 14pt;
+  margin: 0 0 8pt 0;
+}
+.theme-card.alt .theme-title {
+  color: #ff6b6b;
+}
+.theme-desc {
+  color: #bbbbbb;
+  font-size: 10pt;
+  margin: 0;
+  line-height: 1.4;
+}
+/* 底部引用 */
+.quote-section {
+  position: absolute;
+  bottom: 40pt;
+  left: 50pt;
+  right: 55pt;
+  background: rgba(90, 60, 120, 0.35);
+  padding: 14pt 20pt;
+  border-radius: 5pt;
+}
+.quote-text {
+  color: #e0e0e0;
+  font-size: 12pt;
+  margin: 0;
+  font-style: italic;
+}
+.quote-author {
+  color: #ff6b6b;
+  font-size: 10pt;
+  margin: 8pt 0 0 0;
+}
+</style>
+</head>
+<body>
+<div class="sidebar"></div>
+<div class="header">
+  <div class="header-line"></div>
+  <h1>核心主题</h1>
+</div>
+<div class="themes-grid">
+  <div class="theme-card">
+    <p class="theme-title">自我认同与价值</p>
+    <p class="theme-desc">角色们不断追问自我存在的意义，尤其是真嗣始终质疑自己的价值。</p>
+  </div>
+  <div class="theme-card alt">
+    <p class="theme-title">人与人的羁绊</p>
+    <p class="theme-desc">刺猬困境：靠近会互相伤害，疏远又会孤独痛苦。</p>
+  </div>
+  <div class="theme-card alt">
+    <p class="theme-title">亲子关系</p>
+    <p class="theme-desc">碇源堂与真嗣破碎的父子关系，映射出遗弃与情感疏离的主题。</p>
+  </div>
+  <div class="theme-card">
+    <p class="theme-title">心理与创伤</p>
+    <p class="theme-desc">通过象征性意象和角色内省，深入探讨抑郁、焦虑与心理创伤。</p>
+  </div>
+</div>
+<div class="quote-section">
+  <p class="quote-text">"只要有活下去的意志，哪里都可以是天堂。"</p>
+  <p class="quote-author">碇唯</p>
+</div>
+</body>
+</html>

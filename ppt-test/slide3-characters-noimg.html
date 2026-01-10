@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1a0a2e; font-family: Arial, sans-serif;
+  display: flex;
+}
+/* 顶部装饰线 */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720pt;
+  height: 5pt;
+  background: #4ecdc4;
+}
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 25pt;
+  left: 50pt;
+}
+h1 {
+  color: #ff6b6b;
+  font-size: 28pt;
+  margin: 0;
+}
+.subtitle {
+  color: #888888;
+  font-size: 11pt;
+  margin: 5pt 0 0 0;
+}
+/* 角色卡片网格 - 精确计算位置 */
+/* 总宽度: 720pt, 左右边距各50pt, 可用620pt */
+/* 4张卡片, 间距15pt, 每张卡片宽度: (620-45)/4 = 143.75pt ≈ 143pt */
+.characters-grid {
+  position: absolute;
+  top: 85pt;
+  left: 50pt;
+  display: flex;
+  gap: 15pt;
+}
+.char-card {
+  width: 143pt;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6pt;
+  padding: 10pt;
+  border-bottom: 3pt solid #4ecdc4;
+}
+.char-card.shinji { border-bottom-color: #5c7cfa; }
+.char-card.rei { border-bottom-color: #74c0fc; }
+.char-card.asuka { border-bottom-color: #ff6b6b; }
+.char-card.kaworu { border-bottom-color: #da77f2; }
+/* 图片占位区 - 宽度123pt(143-20padding), 高度82pt(保持3:2比例) */
+.char-img-placeholder {
+  width: 123pt;
+  height: 82pt;
+  border-radius: 4pt;
+  margin-bottom: 8pt;
+  background: rgba(0, 0, 0, 0.25);
+}
+.char-name {
+  color: #ffffff;
+  font-size: 13pt;
+  margin: 0 0 3pt 0;
+}
+.char-name-jp {
+  color: #777777;
+  font-size: 9pt;
+  margin: 0 0 8pt 0;
+}
+.char-eva {
+  background: rgba(78, 205, 196, 0.25);
+  padding: 3pt 8pt;
+  border-radius: 3pt;
+  display: inline-block;
+  margin-bottom: 8pt;
+}
+.eva-label {
+  color: #4ecdc4;
+  font-size: 9pt;
+  margin: 0;
+}
+.char-desc {
+  color: #aaaaaa;
+  font-size: 9pt;
+  margin: 0;
+  line-height: 1.4;
+}
+/* 底部徽章 */
+.bottom-badge {
+  position: absolute;
+  bottom: 25pt;
+  left: 50pt;
+  background: #ff6b6b;
+  padding: 6pt 15pt;
+  border-radius: 3pt;
+}
+.badge-text {
+  color: #ffffff;
+  font-size: 10pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="header">
+  <h1>主要角色</h1>
+  <p class="subtitle">EVA 驾驶员 - 适格者</p>
+</div>
+<div class="characters-grid">
+  <div class="char-card shinji">
+    <div class="char-img-placeholder"></div>
+    <p class="char-name">碇真嗣</p>
+    <p class="char-name-jp">第三适格者</p>
+    <div class="char-eva">
+      <p class="eva-label">初号机</p>
+    </div>
+    <p class="char-desc">不情愿的主角，与父亲关系疏离，不断质疑自我价值。</p>
+  </div>
+  <div class="char-card rei">
+    <div class="char-img-placeholder"></div>
+    <p class="char-name">绫波丽</p>
+    <p class="char-name-jp">第一适格者</p>
+    <div class="char-eva">
+      <p class="eva-label">零号机</p>
+    </div>
+    <p class="char-desc">神秘寡言的少女，与EVA计划有不为人知的联系。</p>
+  </div>
+  <div class="char-card asuka">
+    <div class="char-img-placeholder"></div>
+    <p class="char-name">明日香</p>
+    <p class="char-name-jp">第二适格者</p>
+    <div class="char-eva">
+      <p class="eva-label">二号机</p>
+    </div>
+    <p class="char-desc">骄傲好胜的德日混血少女，内心隐藏着童年创伤。</p>
+  </div>
+  <div class="char-card kaworu">
+    <div class="char-img-placeholder"></div>
+    <p class="char-name">渚薰</p>
+    <p class="char-name-jp">第五适格者</p>
+    <div class="char-eva">
+      <p class="eva-label">二号机</p>
+    </div>
+    <p class="char-desc">神秘少年，与真嗣建立深厚羁绊，真实身份令人震惊。</p>
+  </div>
+</div>
+<div class="bottom-badge">
+  <p class="badge-text">适格者计划</p>
+</div>
+</body>
+</html>

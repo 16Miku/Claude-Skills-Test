@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d0221;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+/* 顶部彩色条 */
+.top-bar { position: absolute; top: 0; left: 0; width: 240pt; height: 4pt; background: #ff6b6b; }
+.top-bar2 { position: absolute; top: 0; left: 240pt; width: 240pt; height: 4pt; background: #4ecdc4; }
+.top-bar3 { position: absolute; top: 0; left: 480pt; width: 240pt; height: 4pt; background: #a855f7; }
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 30pt; left: 50pt;
+}
+.section-num {
+  color: rgba(78, 205, 196, 0.4);
+  font-size: 10pt;
+  margin: 0 0 5pt 0;
+  letter-spacing: 2pt;
+}
+h1 {
+  color: #4ecdc4;
+  font-size: 32pt;
+  font-weight: 600;
+  margin: 0;
+}
+/* 影响力卡片网格 */
+.impact-grid {
+  position: absolute;
+  top: 95pt; left: 50pt;
+  display: flex;
+  gap: 15pt;
+}
+.impact-card {
+  width: 180pt;
+  background: rgba(26, 10, 46, 0.6);
+  border-radius: 8pt;
+  padding: 15pt;
+}
+.card-top-line {
+  width: 100%;
+  height: 3pt;
+  margin-bottom: 15pt;
+}
+.card1 .card-top-line { background: #4ecdc4; }
+.card2 .card-top-line { background: #ff6b6b; }
+.card3 .card-top-line { background: #a855f7; }
+.card-icon {
+  width: 40pt; height: 40pt;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12pt;
+}
+.card1 .card-icon { background: rgba(78, 205, 196, 0.15); }
+.card2 .card-icon { background: rgba(255, 107, 107, 0.15); }
+.card3 .card-icon { background: rgba(168, 85, 247, 0.15); }
+.icon-letter {
+  font-size: 18pt;
+  font-weight: 700;
+  margin: 0;
+}
+.card1 .icon-letter { color: #4ecdc4; }
+.card2 .icon-letter { color: #ff6b6b; }
+.card3 .icon-letter { color: #a855f7; }
+.card-title {
+  font-size: 14pt;
+  font-weight: 600;
+  margin: 0 0 10pt 0;
+}
+.card1 .card-title { color: #4ecdc4; }
+.card2 .card-title { color: #ff6b6b; }
+.card3 .card-title { color: #a855f7; }
+.card-desc {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10pt;
+  line-height: 1.5;
+  margin: 0;
+}
+/* 统计数据区 */
+.stats-row {
+  position: absolute;
+  bottom: 55pt; left: 50pt;
+  display: flex;
+  gap: 60pt;
+}
+.stat-item {
+  text-align: left;
+}
+.stat-num {
+  font-size: 36pt;
+  font-weight: 700;
+  margin: 0;
+}
+.stat1 .stat-num { color: #4ecdc4; }
+.stat2 .stat-num { color: #ff6b6b; }
+.stat3 .stat-num { color: #a855f7; }
+.stat-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10pt;
+  margin: 5pt 0 0 0;
+}
+/* 底部装饰 */
+.bottom-line {
+  position: absolute;
+  bottom: 25pt; left: 50pt;
+  width: 100pt; height: 2pt;
+  background: #ff6b6b;
+}
+.page-num {
+  position: absolute;
+  bottom: 22pt; right: 50pt;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="top-bar2"></div>
+<div class="top-bar3"></div>
+<div class="header">
+  <p class="section-num">06 / IMPACT</p>
+  <h1>文化影响</h1>
+</div>
+<div class="impact-grid">
+  <div class="impact-card card1">
+    <div class="card-top-line"></div>
+    <div class="card-icon"><p class="icon-letter">A</p></div>
+    <p class="card-title">动画革命</p>
+    <p class="card-desc">重新定义了动画在艺术和主题上的可能性，影响了无数创作者和后续作品。</p>
+  </div>
+  <div class="impact-card card2">
+    <div class="card-top-line"></div>
+    <div class="card-icon"><p class="icon-letter">P</p></div>
+    <p class="card-title">心理深度</p>
+    <p class="card-desc">开创了动画中复杂心理叙事的先河，公开探讨心理健康议题，打破禁忌。</p>
+  </div>
+  <div class="impact-card card3">
+    <div class="card-top-line"></div>
+    <div class="card-icon"><p class="icon-letter">M</p></div>
+    <p class="card-title">机甲类型</p>
+    <p class="card-desc">解构并重塑了机甲类型，加入深刻的角色刻画，超越传统机器人动画。</p>
+  </div>
+</div>
+<div class="stats-row">
+  <div class="stat-item stat1">
+    <p class="stat-num">26</p>
+    <p class="stat-label">TV集数</p>
+  </div>
+  <div class="stat-item stat2">
+    <p class="stat-num">4</p>
+    <p class="stat-label">新剧场版</p>
+  </div>
+  <div class="stat-item stat3">
+    <p class="stat-num">25+</p>
+    <p class="stat-label">年传奇</p>
+  </div>
+</div>
+<div class="bottom-line"></div>
+<p class="page-num">07 / 08</p>
+</body>
+</html>

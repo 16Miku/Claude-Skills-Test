@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d1b2a; font-family: Arial, sans-serif;
+  display: flex;
+}
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 30pt;
+  left: 50pt;
+}
+.header-line {
+  width: 60pt;
+  height: 3pt;
+  background: #ff6b6b;
+  margin-bottom: 10pt;
+}
+h1 {
+  color: #ffffff;
+  font-size: 28pt;
+  margin: 0;
+}
+.subtitle {
+  color: #4ecdc4;
+  font-size: 12pt;
+  margin: 6pt 0 0 0;
+}
+/* EVA机体卡片 */
+.eva-grid {
+  position: absolute;
+  top: 120pt;
+  left: 50pt;
+  right: 50pt;
+  display: flex;
+  gap: 20pt;
+}
+.eva-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6pt;
+  overflow: hidden;
+}
+.eva-header {
+  padding: 14pt 16pt;
+  background: #5c3d99;
+}
+.eva-header.unit01 { background: #5c3d99; }
+.eva-header.unit00 { background: #1565c0; }
+.eva-header.unit02 { background: #c62828; }
+.eva-name {
+  color: #ffffff;
+  font-size: 16pt;
+  margin: 0;
+}
+.eva-body {
+  padding: 14pt 16pt;
+}
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8pt;
+}
+.spec-label {
+  color: #777777;
+  font-size: 11pt;
+  margin: 0;
+}
+.spec-value {
+  color: #4ecdc4;
+  font-size: 11pt;
+  margin: 0;
+}
+.eva-desc {
+  color: #aaaaaa;
+  font-size: 10pt;
+  margin: 12pt 0 0 0;
+  line-height: 1.5;
+}
+/* 底部装饰 */
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 720pt;
+  height: 40pt;
+  background: #1b263b;
+}
+.status-badge {
+  position: absolute;
+  bottom: 10pt;
+  left: 50pt;
+  background: #ff6b6b;
+  padding: 5pt 12pt;
+  border-radius: 3pt;
+}
+.status-text {
+  color: #ffffff;
+  font-size: 10pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-line"></div>
+  <h1>EVA 机体</h1>
+  <p class="subtitle">泛用人型决战兵器</p>
+</div>
+<div class="eva-grid">
+  <div class="eva-card">
+    <div class="eva-header unit01">
+      <p class="eva-name">初号机 试作型</p>
+    </div>
+    <div class="eva-body">
+      <div class="spec-row">
+        <p class="spec-label">驾驶员</p>
+        <p class="spec-value">碇真嗣</p>
+      </div>
+      <div class="spec-row">
+        <p class="spec-label">配色</p>
+        <p class="spec-value">紫色 / 绿色</p>
+      </div>
+      <div class="spec-row">
+        <p class="spec-label">灵魂</p>
+        <p class="spec-value">碇唯</p>
+      </div>
+      <p class="eva-desc">标志性的紫色机体，可进入暴走状态。内含真嗣母亲的灵魂。</p>
+    </div>
+  </div>
+  <div class="eva-card">
+    <div class="eva-header unit00">
+      <p class="eva-name">零号机 原型机</p>
+    </div>
+    <div class="eva-body">
+      <div class="spec-row">
+        <p class="spec-label">驾驶员</p>
+        <p class="spec-value">绫波丽</p>
+      </div>
+      <div class="spec-row">
+        <p class="spec-label">配色</p>
+        <p class="spec-value">橙色 / 蓝色</p>
+      </div>
+      <div class="spec-row">
+        <p class="spec-label">状态</p>
+        <p class="spec-value">已损毁</p>
+      </div>
+      <p class="eva-desc">第一台成功的EVA，性能不稳定但由丽忠实驾驶。</p>
+    </div>
+  </div>
+  <div class="eva-card">
+    <div class="eva-header unit02">
+      <p class="eva-name">二号机 量产先行型</p>
+    </div>
+    <div class="eva-body">
+      <div class="spec-row">
+        <p class="spec-label">驾驶员</p>
+        <p class="spec-value">明日香</p>
+      </div>
+      <div class="spec-row">
+        <p class="spec-label">配色</p>
+        <p class="spec-value">红色</p>
+      </div>
+      <div class="spec-row">
+        <p class="spec-label">灵魂</p>
+        <p class="spec-value">惣流京子</p>
+      </div>
+      <p class="eva-desc">首台量产型EVA，四眼设计，战斗风格激进。</p>
+    </div>
+  </div>
+</div>
+<div class="bottom-bar"></div>
+<div class="status-badge">
+  <p class="status-text">MAGI 系统监控中</p>
+</div>
+</body>
+</html>

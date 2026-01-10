@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d0221;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+/* 顶部警告条纹 - 使用纯色块模拟 */
+.top-bar {
+  position: absolute;
+  top: 0; left: 0;
+  width: 720pt; height: 6pt;
+  background: #ff6b6b;
+}
+/* 左侧装饰线 */
+.left-accent {
+  position: absolute;
+  left: 40pt; top: 80pt;
+  width: 3pt; height: 100pt;
+  background: #4ecdc4;
+}
+/* NERV 标识区 */
+.nerv-badge {
+  position: absolute;
+  top: 35pt; left: 50pt;
+}
+.nerv-text {
+  color: rgba(255, 107, 107, 0.8);
+  font-size: 11pt;
+  letter-spacing: 4pt;
+  margin: 0;
+}
+/* 主标题区 - 居中 */
+.title-container {
+  position: absolute;
+  top: 130pt; left: 0; right: 0;
+  text-align: center;
+}
+.main-title {
+  font-size: 72pt;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 8pt;
+}
+.title-line {
+  position: absolute;
+  top: 210pt; left: 260pt;
+  width: 200pt; height: 3pt;
+  background: #ff6b6b;
+}
+.subtitle {
+  position: absolute;
+  top: 230pt; left: 0; right: 0;
+  text-align: center;
+  font-size: 24pt;
+  color: #4ecdc4;
+  margin: 0;
+  letter-spacing: 6pt;
+}
+/* 日文副标题 */
+.jp-subtitle {
+  position: absolute;
+  top: 270pt; left: 0; right: 0;
+  text-align: center;
+  font-size: 12pt;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  letter-spacing: 2pt;
+}
+/* 底部信息栏 */
+.bottom-left {
+  position: absolute;
+  bottom: 30pt; left: 50pt;
+}
+.year-dot {
+  position: absolute;
+  bottom: 35pt; left: 50pt;
+  width: 8pt; height: 8pt;
+  background: #4ecdc4;
+  border-radius: 50%;
+}
+.year-text {
+  position: absolute;
+  bottom: 32pt; left: 65pt;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11pt;
+  margin: 0;
+}
+.studio-text {
+  position: absolute;
+  bottom: 32pt; right: 50pt;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10pt;
+  margin: 0;
+  letter-spacing: 1pt;
+}
+/* 右下角装饰块 */
+.decor-block {
+  position: absolute;
+  right: 60pt; bottom: 80pt;
+  width: 50pt; height: 50pt;
+  background: rgba(78, 205, 196, 0.1);
+  border: 1pt solid rgba(78, 205, 196, 0.3);
+}
+.decor-inner {
+  position: absolute;
+  right: 75pt; bottom: 95pt;
+  width: 30pt; height: 30pt;
+  background: rgba(255, 107, 107, 0.15);
+  border: 1pt solid rgba(255, 107, 107, 0.3);
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="left-accent"></div>
+<div class="nerv-badge">
+  <p class="nerv-text">NERV</p>
+</div>
+<div class="title-container">
+  <h1 class="main-title">EVA</h1>
+</div>
+<div class="title-line"></div>
+<p class="subtitle">新世纪福音战士</p>
+<p class="jp-subtitle">NEON GENESIS EVANGELION</p>
+<div class="year-dot"></div>
+<p class="year-text">1995 - 2021</p>
+<p class="studio-text">GAINAX / khara</p>
+<div class="decor-block"></div>
+<div class="decor-inner"></div>
+</body>
+</html>

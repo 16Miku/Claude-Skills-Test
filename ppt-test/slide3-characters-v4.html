@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #0d0221;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+/* 顶部彩色条 */
+.top-bar { position: absolute; top: 0; left: 0; width: 240pt; height: 4pt; background: #ff6b6b; }
+.top-bar2 { position: absolute; top: 0; left: 240pt; width: 240pt; height: 4pt; background: #4ecdc4; }
+.top-bar3 { position: absolute; top: 0; left: 480pt; width: 240pt; height: 4pt; background: #a855f7; }
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 25pt; left: 50pt;
+}
+.section-num {
+  color: rgba(78, 205, 196, 0.4);
+  font-size: 10pt;
+  margin: 0 0 5pt 0;
+  letter-spacing: 2pt;
+}
+h1 {
+  color: #ff6b6b;
+  font-size: 28pt;
+  font-weight: 600;
+  margin: 0;
+}
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11pt;
+  margin: 5pt 0 0 0;
+}
+/* 角色卡片网格 */
+.characters-grid {
+  position: absolute;
+  top: 95pt; left: 50pt;
+  display: flex;
+  gap: 6pt;
+}
+.char-card {
+  width: 150pt;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6pt;
+  overflow: hidden;
+}
+/* 图片占位区 */
+.char-img-placeholder {
+  width: 150pt;
+  height: 100pt;
+  background: rgba(0, 0, 0, 0.3);
+}
+.char-info {
+  padding: 10pt 12pt;
+}
+.char-name {
+  color: #ffffff;
+  font-size: 14pt;
+  font-weight: 600;
+  margin: 0 0 3pt 0;
+}
+.char-title {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 9pt;
+  margin: 0 0 8pt 0;
+}
+.char-eva {
+  display: inline-block;
+  padding: 3pt 10pt;
+  border-radius: 3pt;
+  margin-bottom: 8pt;
+}
+.shinji .char-eva { background: rgba(92, 124, 250, 0.25); }
+.rei .char-eva { background: rgba(116, 192, 252, 0.25); }
+.asuka .char-eva { background: rgba(255, 107, 107, 0.25); }
+.kaworu .char-eva { background: rgba(218, 119, 242, 0.25); }
+.eva-label {
+  font-size: 9pt;
+  margin: 0;
+}
+.shinji .eva-label { color: #5c7cfa; }
+.rei .eva-label { color: #74c0fc; }
+.asuka .eva-label { color: #ff6b6b; }
+.kaworu .eva-label { color: #da77f2; }
+.char-desc {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 9pt;
+  line-height: 1.4;
+  margin: 0;
+}
+/* 底部彩色线条 */
+.card-bottom-line {
+  height: 3pt;
+}
+.shinji .card-bottom-line { background: #5c7cfa; }
+.rei .card-bottom-line { background: #74c0fc; }
+.asuka .card-bottom-line { background: #ff6b6b; }
+.kaworu .card-bottom-line { background: #da77f2; }
+/* 底部装饰 */
+.bottom-line {
+  position: absolute;
+  bottom: 25pt; left: 50pt;
+  width: 100pt; height: 2pt;
+  background: #ff6b6b;
+}
+.page-num {
+  position: absolute;
+  bottom: 22pt; right: 50pt;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="top-bar"></div>
+<div class="top-bar2"></div>
+<div class="top-bar3"></div>
+<div class="header">
+  <p class="section-num">02 / CHARACTERS</p>
+  <h1>主要角色</h1>
+  <p class="subtitle">EVA 驾驶员 - 适格者</p>
+</div>
+<div class="characters-grid">
+  <div class="char-card shinji">
+    <div class="char-img-placeholder"></div>
+    <div class="char-info">
+      <p class="char-name">碇真嗣</p>
+      <p class="char-title">第三适格者</p>
+      <div class="char-eva"><p class="eva-label">初号机</p></div>
+      <p class="char-desc">不情愿的主角，与父亲关系疏离，不断质疑自我价值。</p>
+    </div>
+    <div class="card-bottom-line"></div>
+  </div>
+  <div class="char-card rei">
+    <div class="char-img-placeholder"></div>
+    <div class="char-info">
+      <p class="char-name">绫波丽</p>
+      <p class="char-title">第一适格者</p>
+      <div class="char-eva"><p class="eva-label">零号机</p></div>
+      <p class="char-desc">神秘寡言的少女，与EVA计划有不为人知的联系。</p>
+    </div>
+    <div class="card-bottom-line"></div>
+  </div>
+  <div class="char-card asuka">
+    <div class="char-img-placeholder"></div>
+    <div class="char-info">
+      <p class="char-name">明日香</p>
+      <p class="char-title">第二适格者</p>
+      <div class="char-eva"><p class="eva-label">二号机</p></div>
+      <p class="char-desc">骄傲好胜的德日混血少女，内心隐藏着童年创伤。</p>
+    </div>
+    <div class="card-bottom-line"></div>
+  </div>
+  <div class="char-card kaworu">
+    <div class="char-img-placeholder"></div>
+    <div class="char-info">
+      <p class="char-name">渚薰</p>
+      <p class="char-title">第五适格者</p>
+      <div class="char-eva"><p class="eva-label">二号机</p></div>
+      <p class="char-desc">神秘少年，与真嗣建立深厚羁绊，真实身份令人震惊。</p>
+    </div>
+    <div class="card-bottom-line"></div>
+  </div>
+</div>
+<div class="bottom-line"></div>
+<p class="page-num">03 / 08</p>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1a0a2e; font-family: Arial, sans-serif;
+  display: flex;
+  position: relative;
+}
+/* 装饰性斜线背景 */
+.bg-diagonal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400pt;
+  height: 405pt;
+  background: #2d1b4e;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* 顶部装饰线 */
+.top-line {
+  position: absolute;
+  top: 30pt;
+  left: 60pt;
+  width: 100pt;
+  height: 3pt;
+  background: #ff6b6b;
+}
+/* 主内容区 */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 720pt;
+  height: 405pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* EVA 主标题 */
+.title-box {
+  background: #ff6b6b;
+  padding: 25pt 80pt;
+  margin-bottom: 25pt;
+  border-radius: 6pt;
+}
+h1 {
+  color: #ffffff;
+  font-size: 56pt;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 12pt;
+}
+/* 副标题 */
+.subtitle-box {
+  background: #4ecdc4;
+  padding: 12pt 50pt;
+  border-radius: 4pt;
+}
+h2 {
+  color: #1a0a2e;
+  font-size: 20pt;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 4pt;
+}
+/* 底部信息 */
+.bottom-left {
+  position: absolute;
+  bottom: 35pt;
+  left: 60pt;
+}
+.nerv-badge {
+  background: #ff6b6b;
+  padding: 8pt 20pt;
+  border-radius: 3pt;
+}
+.nerv-text {
+  color: #ffffff;
+  font-size: 14pt;
+  margin: 0;
+  letter-spacing: 2pt;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 35pt;
+  right: 60pt;
+}
+.year-badge {
+  background: #4ecdc4;
+  padding: 8pt 25pt;
+  border-radius: 3pt;
+}
+.year-text {
+  color: #1a0a2e;
+  font-size: 14pt;
+  margin: 0;
+}
+/* 左侧装饰线 */
+.left-accent {
+  position: absolute;
+  left: 0;
+  top: 120pt;
+  width: 5pt;
+  height: 165pt;
+  background: #4ecdc4;
+}
+</style>
+</head>
+<body>
+<div class="bg-diagonal"></div>
+<div class="left-accent"></div>
+<div class="top-line"></div>
+<div class="content">
+  <div class="title-box">
+    <h1>EVA</h1>
+  </div>
+  <div class="subtitle-box">
+    <h2>新世纪福音战士</h2>
+  </div>
+</div>
+<div class="bottom-left">
+  <div class="nerv-badge">
+    <p class="nerv-text">NERV</p>
+  </div>
+</div>
+<div class="bottom-right">
+  <div class="year-badge">
+    <p class="year-text">1995 - 2021</p>
+  </div>
+</div>
+</body>
+</html>

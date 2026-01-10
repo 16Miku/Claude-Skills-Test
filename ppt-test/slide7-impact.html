@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #1a0a2e; font-family: Arial, sans-serif;
+  display: flex;
+}
+/* 标题区 */
+.header {
+  position: absolute;
+  top: 30pt;
+  left: 50pt;
+}
+.header-line {
+  width: 60pt;
+  height: 3pt;
+  background: #ff6b6b;
+  margin-bottom: 10pt;
+}
+h1 {
+  color: #ff6b6b;
+  font-size: 28pt;
+  margin: 0;
+}
+/* 影响力卡片 */
+.impact-grid {
+  position: absolute;
+  top: 100pt;
+  left: 50pt;
+  right: 50pt;
+  display: flex;
+  gap: 20pt;
+}
+.impact-card {
+  flex: 1;
+  background: rgba(78, 205, 196, 0.08);
+  padding: 20pt;
+  border-radius: 8pt;
+  border-top: 4pt solid #4ecdc4;
+}
+.impact-card.alt {
+  border-top-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.08);
+}
+.impact-icon {
+  background: #4ecdc4;
+  width: 40pt;
+  height: 40pt;
+  border-radius: 50%;
+  margin-bottom: 14pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.impact-card.alt .impact-icon {
+  background: #ff6b6b;
+}
+.icon-text {
+  color: #1a0a2e;
+  font-size: 18pt;
+  margin: 0;
+}
+.impact-title {
+  color: #ffffff;
+  font-size: 15pt;
+  margin: 0 0 10pt 0;
+}
+.impact-desc {
+  color: #aaaaaa;
+  font-size: 11pt;
+  margin: 0;
+  line-height: 1.5;
+}
+/* 统计数据 */
+.stats-section {
+  position: absolute;
+  bottom: 40pt;
+  left: 50pt;
+  display: flex;
+  gap: 50pt;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  color: #4ecdc4;
+  font-size: 32pt;
+  margin: 0;
+}
+.stat-label {
+  color: #777777;
+  font-size: 11pt;
+  margin: 5pt 0 0 0;
+}
+/* 底部装饰 */
+.bottom-accent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 280pt;
+  height: 120pt;
+  background: #2d1b4e;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+</style>
+</head>
+<body>
+<div class="bottom-accent"></div>
+<div class="header">
+  <div class="header-line"></div>
+  <h1>文化影响</h1>
+</div>
+<div class="impact-grid">
+  <div class="impact-card">
+    <div class="impact-icon">
+      <p class="icon-text">A</p>
+    </div>
+    <p class="impact-title">动画革命</p>
+    <p class="impact-desc">重新定义了动画在艺术和主题上的可能性，影响了无数创作者。</p>
+  </div>
+  <div class="impact-card alt">
+    <div class="impact-icon">
+      <p class="icon-text">P</p>
+    </div>
+    <p class="impact-title">心理深度</p>
+    <p class="impact-desc">开创了动画中复杂心理叙事的先河，公开探讨心理健康议题。</p>
+  </div>
+  <div class="impact-card">
+    <div class="impact-icon">
+      <p class="icon-text">M</p>
+    </div>
+    <p class="impact-title">机甲类型</p>
+    <p class="impact-desc">解构并重塑了机甲类型，加入深刻的角色刻画。</p>
+  </div>
+</div>
+<div class="stats-section">
+  <div class="stat-item">
+    <p class="stat-number">26</p>
+    <p class="stat-label">TV集数</p>
+  </div>
+  <div class="stat-item">
+    <p class="stat-number">4</p>
+    <p class="stat-label">新剧场版</p>
+  </div>
+  <div class="stat-item">
+    <p class="stat-number">25+</p>
+    <p class="stat-label">年传奇</p>
+  </div>
+</div>
+</body>
+</html>
