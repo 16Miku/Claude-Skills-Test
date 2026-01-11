@@ -4,6 +4,11 @@
 
 本文详细记录了使用 Claude Code 的 `pptx-skills` 技能，从零开始生成一套精美的《新世纪福音战士》(EVA) 主题 PowerPoint 演示文稿的完整过程。经过 4 个版本的迭代优化，最终产出了一套具有专业设计水准的 8 页 PPT。
 
+## 链接
+
+https://github.com/16Miku/Claude-Skills-Test
+
+
 ## 目录
 
 1. [技术栈介绍](#技术栈介绍)
@@ -345,24 +350,24 @@ Error: HTML content overflows body by 29.3pt horizontally
 ### v4版ppt
 
 
-![alt text](images/Snipaste_2026-01-11_03-24-14.png)
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-14.png)
 
-![alt text](images/Snipaste_2026-01-11_03-24-16.png)
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-16.png)
 
-![alt text](images/Snipaste_2026-01-11_03-24-18.png)
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-18.png)
 
-![alt text](images/Snipaste_2026-01-11_03-24-20.png)
-
-
-![alt text](images/Snipaste_2026-01-11_03-24-22.png)
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-20.png)
 
 
-![alt text](images/Snipaste_2026-01-11_03-24-23.png)
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-22.png)
 
 
-![alt text](images/Snipaste_2026-01-11_03-24-25.png)
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-23.png)
 
-![alt text](images/Snipaste_2026-01-11_03-24-26.png)
+
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-25.png)
+
+![alt text](https://raw.githubusercontent.com/16Miku/Claude-Skills-Test/refs/heads/main/ppt-test/images/Snipaste_2026-01-11_03-24-26.png)
 
 
 
