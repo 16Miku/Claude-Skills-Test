@@ -4,9 +4,13 @@
 
 本文详细记录了使用 Claude Code 的 `pptx-skills` 技能，从零开始生成一套精美的《新世纪福音战士》(EVA) 主题 PowerPoint 演示文稿的完整过程。经过 4 个版本的迭代优化，最终产出了一套具有专业设计水准的 8 页 PPT。
 
-## 链接
+## 相关链接
 
+本仓库链接
 https://github.com/16Miku/Claude-Skills-Test
+
+使用到的pptx-skills
+https://github.com/ComposioHQ/awesome-claude-skills/tree/master/document-skills/pptx
 
 
 ## 目录
