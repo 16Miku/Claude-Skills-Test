@@ -19,7 +19,8 @@ https://github.com/16Miku/Claude-Skills-Test
 6. [V4 版本：专业级设计重构](#v4-版本专业级设计重构)
 7. [遇到的问题与解决方案](#遇到的问题与解决方案)
 8. [最终成果展示](#最终成果展示)
-9. [总结与心得](#总结与心得)
+9. [执行命令汇总](#执行命令汇总)
+10. [总结与心得](#总结与心得)
 
 ---
 
@@ -406,6 +407,160 @@ ppt-test/
 | 系列年表 | 圆形时间节点 + 终章卡片 |
 | 文化影响 | 三列影响力卡片 + 统计数据 |
 | 感谢页 | 居中标题 + 引用 + NERV 标语 |
+
+---
+
+## 执行命令汇总
+
+以下是本次生成 PPT 过程中实际执行的所有相关命令，按时间顺序整理：
+
+### 1. 环境准备阶段
+
+```bash
+# 创建项目目录
+mkdir -p "A:/study/AI/LLM/Claude-Skills-Test/ppt-test"
+
+# 进入项目目录
+cd "A:\study\AI\LLM\Claude-Skills-Test\ppt-test"
+
+# 初始化 Node.js 项目
+npm init -y
+
+# 安装核心依赖
+npm install pptxgenjs playwright sharp
+
+# 安装 Playwright Chromium 浏览器（首次运行必需）
+npx playwright install chromium
+```
+
+### 2. V1-V3 版本生成
+
+```bash
+# 生成 V1 英文版 PPT
+node create-ppt.js
+# 输出: EVA-Introduction.pptx
+
+# 生成 V2 中文版 PPT（修改脚本后）
+node create-ppt.js
+# 输出: EVA-Introduction-CN.pptx
+
+# 生成 V3 美化版 PPT
+node create-ppt.js
+# 输出: EVA-Introduction-CN-v3.pptx
+```
+
+### 3. V4 版本生成
+
+```bash
+# 生成 V4 专业版 PPT（使用新脚本）
+node create-ppt-v4.js
+# 输出: EVA-Introduction-CN-v4.pptx
+```
+
+### 4. 常见错误及修复命令
+
+```bash
+# 错误: Cannot find module 'pptxgenjs'
+# 解决: 安装依赖
+npm install pptxgenjs playwright sharp
+
+# 错误: Executable doesn't exist at ...chromium...
+# 解决: 安装 Playwright 浏览器
+npx playwright install chromium
+
+# 错误: CSS gradients are not supported
+# 解决: 修改 HTML 文件，将 linear-gradient 替换为纯色
+
+# 错误: HTML content overflows body by XXpt horizontally
+# 解决: 修改 HTML 文件，减小元素宽度或间距
+
+# 错误: Text element <p> has border
+# 解决: 修改 HTML 文件，将 border 属性移到单独的 div 元素
+```
+
+### 5. 文件操作命令
+
+```bash
+# 查看项目目录结构
+dir /b
+# 或
+ls -la
+
+# 查看生成的 PPTX 文件
+dir *.pptx
+
+# 查看 HTML 模板文件
+dir *.html
+```
+
+### 6. Git 版本控制
+
+```bash
+# 查看仓库状态
+git status
+
+# 添加文件到暂存区
+git add .gitignore ppt-test/
+
+# 提交更改
+git commit -m "feat: 使用 Claude Code pptx-skills 生成 EVA 主题 PPT 项目"
+
+# 查看提交历史
+git log --oneline
+```
+
+### 7. 调试技巧命令
+
+```bash
+# 在浏览器中预览单个 HTML 幻灯片
+start slide1-title-v4.html
+# 或直接双击 HTML 文件在浏览器中打开
+
+# 检查 Node.js 版本
+node -v
+
+# 检查 npm 版本
+npm -v
+
+# 查看已安装的依赖
+npm list --depth=0
+```
+
+### 8. 完整的一键生成流程
+
+如果你想从零开始复现整个项目，执行以下命令：
+
+```bash
+# 1. 克隆仓库（如果从 GitHub 获取）
+git clone https://github.com/16Miku/Claude-Skills-Test.git
+cd Claude-Skills-Test/ppt-test
+
+# 2. 安装依赖
+npm install
+
+# 3. 安装 Playwright 浏览器
+npx playwright install chromium
+
+# 4. 修改 create-ppt-v4.js 中的 html2pptx 路径
+#    将 C:/Users/{替换为用户名}/.claude/skills/pptx-skills/scripts/html2pptx.js
+#    替换为你本地的 Claude Skills 路径
+
+# 5. 生成 PPT
+node create-ppt-v4.js
+
+# 6. 查看生成的文件
+dir *.pptx
+```
+
+### 命令执行环境说明
+
+| 环境 | 版本/说明 |
+|------|----------|
+| 操作系统 | Windows 11 |
+| Node.js | v18+ 推荐 |
+| npm | v9+ 推荐 |
+| Claude Code | 需要安装 pptx-skills 技能 |
+| 终端 | PowerShell / CMD / Git Bash |
 
 ---
 
